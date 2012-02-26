@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mailjet for Wordpress 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-25 20:30+0100\n"
+"PO-Revision-Date: 2012-01-25 20:31+0100\n"
+"Last-Translator: Mailjet SAS <plugins@mailjet.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp_mailjet_smtp.php:211
+msgid "Your test mail from Mailjet"
+msgstr "Votre email de test depuis Mailjet"
+
+#: ../wp_mailjet_smtp.php:212
+msgid "Your Mailjet configuration is ok!"
+msgstr "Votre configuration de Mailjet fonctionne !"
+
+#: ../wp_mailjet_smtp.php:227
+#, php-format
+msgid "Please contact Mailjet support to sort this out.<br /><br />%d - %s"
+msgstr "Merci de contacter le support Mailjet pour traiter ce problème.<br /><br />%d - %s"
+
+#: ../wp_mailjet_smtp.php:256
+msgid "Mailjet - Cloud Emailing Solution"
+msgstr "Mailjet - Solution de Cloud Emailing"
+
+#: ../wp_mailjet_smtp.php:259
+msgid "To use the plugin you will need :"
+msgstr "Pour utiliser le plugin vous avez besoin :"
+
+#: ../wp_mailjet_smtp.php:262
+msgid "<strong>A Mailjet account</strong> and its API keys."
+msgstr "<strong>D'un compte Mailjet</strong> et de ses clés API."
+
+#: ../wp_mailjet_smtp.php:264
+msgid "<strong>Verified email address</strong> to use as sender for email."
+msgstr "<strong>D'une adresse email vérifiée</strong> à utiliser comme expéditeur des emails."
+
+#: ../wp_mailjet_smtp.php:266
+#, php-format
+msgid "For detailed setup instructions please see %s"
+msgstr "Pour les détails d'installation merci de lire %s"
+
+#: ../wp_mailjet_smtp.php:275
+msgid "A test mail has been sent to your address."
+msgstr "Un email de test a été envoyé à votre adresse."
+
+#: ../wp_mailjet_smtp.php:283
+msgid "General settings"
+msgstr "Paramètres généraux"
+
+#: ../wp_mailjet_smtp.php:288
+msgid "Enabled :"
+msgstr "Activé :"
+
+#: ../wp_mailjet_smtp.php:292
+msgid "Send test mail now :"
+msgstr "Envoyer un email de test maintenant :"
+
+#: ../wp_mailjet_smtp.php:296
+msgid "Recipient of test mail :"
+msgstr "Destinataire de l'email test :"
+
+#: ../wp_mailjet_smtp.php:301
+#: ../wp_mailjet_smtp.php:333
+msgid "Mailjet settings"
+msgstr "Paramètres de Mailjet"
+
+#: ../wp_mailjet_smtp.php:304
+msgid "API Key :"
+msgstr "Clé API :"
+
+#: ../wp_mailjet_smtp.php:308
+msgid "Secret Key :"
+msgstr "Clé secrète :"
+
+#: ../wp_mailjet_smtp.php:313
+msgid "Save &raquo;"
+msgstr "Enregistrer &raquo;"
+
+#: ../wp_mailjet_smtp.php:402
+msgid "Settings"
+msgstr "Paramètres"
+
