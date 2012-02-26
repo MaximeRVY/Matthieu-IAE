@@ -31,7 +31,7 @@ if ( !isset( $current_site ) || !isset( $current_blog ) ) {
 			$domain = substr( $domain, 0, -4 );
 			$_SERVER['HTTP_HOST'] = substr( $_SERVER['HTTP_HOST'], 0, -4 );
 		} else {
-			wp_die( /*WP_I18N_NO_PORT_NUMBER*/'Multisite only works without the port number in the URL.'/*/WP_I18N_NO_PORT_NUMBER*/ );
+			wp_die( /*WP_I18N_NO_PORT_NUMBER*/'La fonctionnalité multisite fonctionne uniquement sans le numéro de port dans l&rsquo;adresse.'/*/WP_I18N_NO_PORT_NUMBER*/ );
 		}
 	}
 
@@ -116,8 +116,8 @@ if ( !isset( $current_site ) || !isset( $current_blog ) ) {
 		if ( defined( 'WP_INSTALLING' ) ) {
 			$current_blog->blog_id = $blog_id = 1;
 		} else {
-			$msg = ! $wpdb->get_var( "SHOW TABLES LIKE '$wpdb->site'" ) ? ' ' . /*WP_I18N_TABLES_MISSING*/'Database tables are missing.'/*/WP_I18N_TABLES_MISSING*/ : '';
-			wp_die( /*WP_I18N_NO_BLOG*/'No site by that name on this system.'/*/WP_I18N_NO_BLOG*/ . $msg );
+			$msg = ! $wpdb->get_var( "SHOW TABLES LIKE '$wpdb->site'" ) ? ' ' . /*WP_I18N_TABLES_MISSING*/'Des tables de la base de données sont manquantes.'/*/WP_I18N_TABLES_MISSING*/ : '';
+			wp_die( /*WP_I18N_NO_BLOG*/'Aucun site ne porte ce nom dans ce système.'/*/WP_I18N_NO_BLOG*/ . $msg );
 		}
 	}
 }
