@@ -19,16 +19,16 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'db-wordpress-iae-matthieu');
+define('DB_NAME', 'wordpress_matthieu_iae');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'matthieu');
+define('DB_USER', 'root');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'admin6288');
+define('DB_PASSWORD', 'root');
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', 'instance6673.db.xeround.com.:4880');
+define('DB_HOST', 'localhost');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
@@ -93,7 +93,7 @@ define('WP_DEBUG', false);
 
 /** Chemin absolu vers le dossier de WordPress. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+  define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
