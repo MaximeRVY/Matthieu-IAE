@@ -1,0 +1,51 @@
+/*
+Theme Name: Twentyeleven Child
+Description: Child theme for the twentyeleven theme 
+Author: Maxime Raverdy
+Template: twentyeleven
+*/
+
+@import url("../twentyeleven/style.css");
+
+#branding hgroup {
+  display: none;
+}
+
+#branding {
+  border : none ;
+}
+
+header #logo img {
+  width: 263px;
+  display: inline-block;
+}
+
+header #logo {
+  margin: 5px 0px 5px 10px;
+  width: 263px;
+  display: inline-block;
+}
+
+#access{
+  display:inline-block;
+  background: white;
+  border: none;
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+#access a{
+  color: black;
+}
+
+#access ul {
+  list-style-type: none;
+}
+
+#access ul li{
+  display: inline-block;
+}
+
+#access div{
+  margin: 0;
+}
