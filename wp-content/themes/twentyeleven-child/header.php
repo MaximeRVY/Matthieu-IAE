@@ -50,6 +50,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script src="<?php echo get_template_directory_uri(); ?>-child/js/jquery-1.7.1.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -86,21 +87,21 @@
 				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
 				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
 				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
-				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
-				<?php //wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
+				<div id="menu">
 				<?php 
-				wp_nav_menu(
-    array (
-        'menu'            => 'main-menu',
-        'container'       => FALSE,
-        'container_id'    => FALSE,
-        'menu_class'      => '',
-        'menu_id'         => FALSE,
-        'depth'           => 1,
-        'walker'          => new Description_Walker
-    )
-);
-?>
+					wp_nav_menu(
+				    array (
+				        'menu'            => 'main-menu',
+				        'container'       => FALSE,
+				        'container_id'    => FALSE,
+				        'menu_class'      => '',
+				        'menu_id'         => FALSE,
+				        'depth'           => 1,
+				        'walker'          => new Description_Walker
+				    )
+					);
+				?>
+				</menu>
 			</nav><!-- #access -->
 	</header><!-- #branding -->
 

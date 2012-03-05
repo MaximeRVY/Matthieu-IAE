@@ -56,10 +56,10 @@ class Description_Walker extends Walker_Nav_Menu
             . "<a $attributes>"
             . $args->link_before
             . $title
-            . '</a> '
             . $args->link_after
             . $description
-            . $args->after;
+            . $args->after
+            . '</a> ';
 
         // Since $output is called by reference we don't need to return anything.
         $output .= apply_filters(

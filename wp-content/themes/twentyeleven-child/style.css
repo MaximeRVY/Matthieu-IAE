@@ -32,6 +32,7 @@ header #logo {
   border: none;
   vertical-align: top;
   padding-top: 20px;
+  width: 700px;
 }
 
 #access a{
@@ -48,4 +49,36 @@ header #logo {
 
 #access div{
   margin: 0;
+}
+
+#menu{
+  display: inline-block;
+
+}
+
+#menu-main_menu .menu-item{
+  display: inline-block;
+  border-left: 1px dotted black;
+  vertical-align: top;
+  height: 50px;
+  padding-left: 10px;
+}
+
+#menu-main_menu .menu-item small{
+  display: block;
+  color: #E2E2E2;
+}
+#menu-main_menu .menu-item a:hover{
+  text-decoration: none;
+}
+
+#slider{
+  margin: auto;
+  width: 800px;
+}
+
+#slogan{
+  margin: -30px auto 0px;
+  width: 80%;
+  text-align: center;
 }
