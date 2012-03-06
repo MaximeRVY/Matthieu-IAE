@@ -11,4 +11,13 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+
+function excerpt($num) {
+$limit = $num+1;
+$excerpt = explode(' ', the_excerpt(), $limit);
+array_pop($excerpt);
+$excerpt = implode(" ",$excerpt)."...";
+echo $excerpt;
+}
+
 ?>

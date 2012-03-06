@@ -1,5 +1,5 @@
-<div id="community">
-  <h3 class="title">Rejoignez nos communautés</h3>
+<div id="community" class="thumb-part">
+  <h3 class="thumb-title">Rejoignez nos communautés</h3>
   <div class="community-slogan">
     Lorem ipsum, vaderestrop satanass !!! aaah tototo
   </div>
