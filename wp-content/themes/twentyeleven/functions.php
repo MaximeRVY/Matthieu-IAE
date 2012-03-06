@@ -333,10 +333,10 @@ function twentyeleven_continue_reading_link() {
  * To override this in a child theme, remove the filter and add your own
  * function tied to the excerpt_more filter hook.
  */
-function twentyeleven_auto_excerpt_more( $more ) {
+/* function twentyeleven_auto_excerpt_more( $more ) {
 	return ' &hellip;' . twentyeleven_continue_reading_link();
 }
-add_filter( 'excerpt_more', 'twentyeleven_auto_excerpt_more' );
+add_filter( 'excerpt_more', 'twentyeleven_auto_excerpt_more' ); */
 
 /**
  * Adds a pretty "Continue Reading" link to custom post excerpts.

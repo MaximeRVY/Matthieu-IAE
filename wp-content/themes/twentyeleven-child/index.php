@@ -15,22 +15,40 @@
 get_header(); ?>
     <div id="slider">
       <?php if (function_exists('easing_slider')){ easing_slider(); }; ?>
-      <?php if(function_exists('vflexslider')) { vflexslider('slider'); } ?>
     </div>
     <div id="slogan">
       <?php bloginfo('description'); ?>
     </div>
     <div id="primary">
-      <div id="content" role="main">
+      <div id="content-home" role="main">
+        <div id="pages">
+          <?php /* get_page */ 
+          query_posts(array(
+            'post__in' => array(
+                get_page_by_title( 'Un chef étoilé' )->ID, 
+                get_page_by_title( 'Une carte raffinée' )->ID, 
+                get_page_by_title( 'Une adresse rénommé')->ID ),
+            'post_type' => 'page',
+            'post_status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'ASC'));
 
-      <?php if ( have_posts() ) : ?>
+          while (have_posts()) { the_post();
+              /* Do whatever you want to do for every page... */
+               get_template_part( 'thumb','page');
+          }
+
+          wp_reset_query();
+                  
+        ?>
+        </div>
+      <?php /*if ( have_posts() ) : ?>
 
         <?php twentyeleven_content_nav( 'nav-above' ); ?>
 
-        <?php /* Start the Loop */ ?>
+        <?php /* Start the Loop   ?>
         <?php while ( have_posts() ) : the_post(); ?>
-
-          <?php get_template_part( 'content', get_post_format() ); ?>
+          <?php get_template_part( 'thumb', get_post_format() ); ?>
 
         <?php endwhile; ?>
 
@@ -49,10 +67,9 @@ get_header(); ?>
           </div><!-- .entry-content -->
         </article><!-- #post-0 -->
 
-      <?php endif; ?>
+      <?php endif;*/ ?>
 
       </div><!-- #content -->
     </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
