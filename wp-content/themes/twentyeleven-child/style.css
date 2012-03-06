@@ -89,6 +89,7 @@ header #logo {
 }
 #pages{
   width: 100%;
+  border-bottom: 1px solid #E2E2E2;
 }
 #pages article{
   display: inline-block;
@@ -149,4 +150,18 @@ header #logo {
 
 #pages .entry-post-thumbnail{
   text-align: center;
+}
+
+#community{
+  margin: 10px 0;
+  display: inline-block;
+  width: 30%;
+}
+
+#community .title{
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px dashed #B4AAAA;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }

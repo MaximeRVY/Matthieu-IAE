@@ -42,6 +42,7 @@ get_header(); ?>
                   
         ?>
         </div>
+        <?php get_template_part( 'thumb','community'); ?>
       <?php /*if ( have_posts() ) : ?>
 
         <?php twentyeleven_content_nav( 'nav-above' ); ?>
