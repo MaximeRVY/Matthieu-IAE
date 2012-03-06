@@ -204,3 +204,10 @@ header #logo {
   width: 28%;
   vertical-align: top;
 }
+
+footer{
+  border-top: 10px solid #4C4C4C;
+  background-color: #333333;
+  height: 150px;
+  color: #7E7E7E;
+}
