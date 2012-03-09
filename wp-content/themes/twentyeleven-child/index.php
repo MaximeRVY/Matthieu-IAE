@@ -43,24 +43,10 @@ get_header(); ?>
         ?>
         </div>
         <?php get_template_part( 'thumb','community'); ?>
-        <?php get_template_part('thumb', 'contact-form') ?>
+        <?php get_template_part('thumb', 'contact-form'); ?>
         
-        <?php 
-          query_posts(array('post_type' => 'post', 'posts_per_page' => '3'));
-          if ( have_posts() ) : ?>
-          <?php /* Start the Loop  */ ?>
-          <div id="articles" class="thumb-part">
-            <h3 class="thumb-title">Retrouvez nos actualités</h3>
-            <div id="articles-content">
-              <?php while ( have_posts()) : the_post(); ?>
-                <?php get_template_part( 'thumb', 'article' ); ?>
-              <?php endwhile; ?>
-            </div>
-
-          </div>
-        <?php endif; ?>
+       <?php get_template_part('thumb', 'articles'); ?>
         
-
       </div><!-- #content -->
     </div><!-- #primary -->
 

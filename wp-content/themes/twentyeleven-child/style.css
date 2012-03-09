@@ -99,7 +99,7 @@ header #logo {
   border: none;
 }
 
-#pages .subtitle{
+.subtitle{
   display: block;
   color: #E2E2E2;
   font-size: 13px;  
@@ -205,9 +205,107 @@ header #logo {
   vertical-align: top;
 }
 
-footer{
+
+
+.page .subtitle{
+  font-size: 20px;
+}
+
+.page .entry-content{
+  margin: 0;
+}
+
+.singular .entry-header, .singular .entry-content{
+  margin: 0;
+  width: 100%;
+}
+
+.singular.page .hentry{
+  padding: 0;
+  display: inline-block;
+  width: 69%;
+}
+
+#sidebar{
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+#sidebar .thumb-part{
+  width: 100%;
+  display: block;
+}
+
+#archives{
+  display: inline-block;
+  width: 69%
+}
+
+#archives article{
+  width: 100%;
+}
+
+.all-actu {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #84394a), color-stop(1, #622a36) );
+  background:-moz-linear-gradient( center top, #84394a 5%, #622a36 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#84394a', endColorstr='#622a36');
+  background-color:#84394a;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size: 16px;
+  font-weight:bold;
+  padding:6px 20px;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #857448;
+}.all-actu:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #622a36), color-stop(1, #84394a) );
+  background:-moz-linear-gradient( center top, #622a36 5%, #84394a 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#622a36', endColorstr='#84394a');
+  background-color:#622a36;
+  text-decoration:none;
+}.all-actu:active {
+  position:relative;
+  top:1px;
+}
+
+
+#footer-menu a{
+  color: #7D7D7D;
+  text-decoration: none;
+}
+
+#footer-menu ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#footer-menu ul li{
+  display: inline-block;
+  border-left: 1px solid #7D7D7D;
+  margin-left: 2px;
+  padding-left: 2px;
+}
+
+#footer-menu ul li:first-child{
+  border:none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#propulsed-by{
+  color: #7D7D7D;
+}
+
+#colophon{
   border-top: 10px solid #4C4C4C;
   background-color: #333333;
   height: 150px;
   color: #7E7E7E;
+  padding: 10px 10px 0;
+
 }
