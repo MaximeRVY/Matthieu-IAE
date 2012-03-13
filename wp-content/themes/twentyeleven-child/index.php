@@ -43,7 +43,10 @@ get_header(); ?>
                   
         ?>
         </div>
-        <?php get_template_part( 'thumb','community'); ?>
+        <div id="community-new">
+          <?php get_template_part( 'thumb','community'); ?>
+          <?php get_template_part('thumb', 'newsletter') ?>
+        </div>
         <?php get_template_part('thumb', 'contact-form'); ?>
         
        <?php get_template_part('thumb', 'articles'); ?>

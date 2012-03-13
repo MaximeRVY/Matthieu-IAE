@@ -68,6 +68,7 @@
 	 */
 	wp_head();
 ?>
+ <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>-child/js/home.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
