@@ -1,6 +1,6 @@
 <div id="all-footer">
   <div id="propulsed-by">
-    Site propulsé par Wordpress, crée par ludivine et Matthieu.
+    Site créé par Ludivine et Matthieu.
   </div>
   <div id="footer-menu">
   <?php 
