@@ -12,7 +12,9 @@ Template: twentyeleven
 }
 
 #branding {
-  border : none ;
+  border : none;
+  margin: auto;
+  width: 870px;
 }
 
 header #logo img {
@@ -21,7 +23,7 @@ header #logo img {
 }
 
 header #logo {
-  margin: 5px 0px 5px 10px;
+  margin: 5px 0 5px 0;
   width: 263px;
   display: inline-block;
 }
@@ -32,7 +34,7 @@ header #logo {
   border: none;
   vertical-align: top;
   padding-top: 20px;
-  width: 700px;
+  width: 600px;
 }
 
 #access a{
@@ -74,7 +76,7 @@ header #logo {
 
 #slider{
   margin: auto;
-  width: 800px;
+  width: 870px;
 }
 
 #slogan{
@@ -93,15 +95,15 @@ header #logo {
 }
 #pages article{
   display: inline-block;
-  width: 32%;
+  width: 32.5%;
   vertical-align:top;
-  margin-right: 1%;
+  margin-right: 0.5%;
   border: none;
 }
 
 .subtitle{
   display: block;
-  color: #E2E2E2;
+  color: #656565;
   font-size: 13px;  
 }
 
@@ -128,7 +130,7 @@ header #logo {
   -webkit-border-radius:6px;
   border-radius:6px;
   border:1px solid #dcdcdc;
-  display:inline-block;
+  display:block;
   color:#696769;
   font-family:Arial;
   font-size:14px;
@@ -136,6 +138,7 @@ header #logo {
   padding:6px 24px;
   text-decoration:none;
   text-shadow:1px 1px 0px #ffffff;
+  width: 112px;
 }
 #pages .read-more:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ccc8cc), color-stop(1, #ffffff) );
@@ -288,8 +291,8 @@ header #logo {
 #footer-menu ul li{
   display: inline-block;
   border-left: 1px solid #7D7D7D;
-  margin-left: 2px;
-  padding-left: 2px;
+  margin-left: 4px;
+  padding-left: 10px;
 }
 
 #footer-menu ul li:first-child{
@@ -309,4 +312,14 @@ header #logo {
   color: #7E7E7E;
   padding: 10px 10px 0;
 
+}
+
+.thumb-picture{
+  width: 100%;
+  height: 150px;
+}
+
+#all-footer{
+  width: 870px;
+  margin: auto;
 }

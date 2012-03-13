@@ -13,12 +13,13 @@
  */
 
 get_header(); ?>
+  <div id="slogan">
+      <?php bloginfo('description'); ?>
+    </div>
     <div id="slider">
       <?php if (function_exists('easing_slider')){ easing_slider(); }; ?>
     </div>
-    <div id="slogan">
-      <?php bloginfo('description'); ?>
-    </div>
+    
     <div id="primary">
       <div id="content-home" role="main">
         <div id="pages">
