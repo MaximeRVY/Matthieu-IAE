@@ -1,7 +1,7 @@
 <div id="community" class="thumb-part">
   <h3 class="thumb-title">Rejoignez nos communautés</h3>
   <div class="community-slogan">
-    Lorem ipsum, vaderestrop satanass !!! aaah tototo
+    Restons en contact !
   </div>
   <div id="logos">
     <a href="#">
